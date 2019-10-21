@@ -1,0 +1,24 @@
+{
+    "name": "livestreet/plugin-cdocs",
+    "description": "Plugin for Livestreet. Components documentation",
+    "type": "livestreet-plugin",
+    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Demidov",
+            "email": "end-fin@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra":{
+        "code":"cdocs",
+        "image":"plugin.png"
+    },
+    "require": {},
+    "autoload": {
+        "classmap" : [
+            "PluginCdocs.class.php"
+        ]
+    }
+}
