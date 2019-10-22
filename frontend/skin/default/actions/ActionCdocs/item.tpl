@@ -5,10 +5,9 @@
 
 
 {block 'layout_page_title'}
-    <h2 class="page-header">{lang "plugin.cdocs.title"}</h2>
+    <h2 class="page-header">{$componentActive}</h2>
 {/block}
                     
 {block 'layout_content'}
-    
-    
+    {component component=$componentActive template='docs'}
 {/block}

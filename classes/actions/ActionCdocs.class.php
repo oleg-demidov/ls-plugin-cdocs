@@ -30,15 +30,32 @@ class PluginCdocs_ActionCdocs extends Action{
     
     public function Init()
     {
-
+        $this->SetDefaultEvent('index');
     }
     
     protected function RegisterEvent()
     {
         $this->AddEventPreg('/^(index)?$/i','EventIndex');
+        $this->AddEventPreg('/^(\w+)?$/i','EventItem');
     }
     
-    public function EventIndex() {
-        return 'components';
+    public function EventIndex() 
+    {
+        
+    }
+    
+    public function EventItem() 
+    {
+        if(!in_array($this->sCurrentEvent, Config::Get('plugin.cdocs.components'))){
+            $this->Message_AddNotice("Component {$this->sCurrentEvent} not found");
+            return $this->EventIndex();
+        }
+        
+        $this->SetTemplateAction('item');
+        $this->assign('componentActive', $this->sCurrentEvent);
+    }
+    
+    public function EventShutdown() {
+        $this->assign('components', Config::Get('plugin.cdocs.components'));
     }
 }
