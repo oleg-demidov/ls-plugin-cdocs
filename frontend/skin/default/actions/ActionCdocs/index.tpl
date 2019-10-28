@@ -5,7 +5,7 @@
 
 
 {block 'layout_page_title'}
-    <h2 class="page-header">{lang "plugin.cdocs.title"}</h2>
+    <h1 class="page-header">{lang "plugin.cdocs.title"}</h1>
 {/block}
                     
 {block 'layout_content'}

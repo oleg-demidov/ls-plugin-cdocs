@@ -6,6 +6,8 @@
 $config['$root$']['router']['page']['cdocs'] = 'PluginCdocs_ActionCdocs';
 
 $config['components'] = [
-    'button'
+    'button',
+    'icon',
+    'badge'
 ];
 return $config;

@@ -41,7 +41,7 @@ class PluginCdocs_ActionCdocs extends Action{
     
     public function EventIndex() 
     {
-        
+        $this->assign('activeComponent', $this->sCurrentEvent);
     }
     
     public function EventItem() 
@@ -52,7 +52,7 @@ class PluginCdocs_ActionCdocs extends Action{
         }
         
         $this->SetTemplateAction('item');
-        $this->assign('componentActive', $this->sCurrentEvent);
+        $this->assign('activeComponent', $this->sCurrentEvent);
     }
     
     public function EventShutdown() {

@@ -12,15 +12,22 @@
 {/block}
 
 {block "content"}
-    {$items = []}
+    {$items = [
+        [
+            text => 'Главная',
+            url => {router page = "cdocs"},
+            name => 'index'
+        ]
+    ]}
     {foreach $components as $component}
         {$items[] = [
             text => $component,
-            url => {router page = "cdocs/{$component}"}
+            url => {router page = "cdocs/{$component}"},
+            name => $component
         ]}
     {/foreach}
-    
     {component "nav" 
+        mods        = "pills"
         activeItem  = $activeComponent
         items       = $items 
         classes     = "flex-column"}
