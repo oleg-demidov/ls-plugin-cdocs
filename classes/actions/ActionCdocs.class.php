@@ -46,16 +46,20 @@ class PluginCdocs_ActionCdocs extends Action{
     
     public function EventItem() 
     {
-        if(!in_array($this->sCurrentEvent, Config::Get('plugin.cdocs.components'))){
-            $this->Message_AddNotice("Component {$this->sCurrentEvent} not found");
+        $sComponentName = strtolower($this->sCurrentEvent);
+        
+        if(!in_array($sComponentName, Config::Get('plugin.cdocs.components'))){
+            $this->Message_AddNotice("Component {$sComponentName} not found");
             return $this->EventIndex();
         }
         
         $this->SetTemplateAction('item');
-        $this->assign('activeComponent', $this->sCurrentEvent);
+        $this->assign('activeComponent', $sComponentName);
     }
     
     public function EventShutdown() {
-        $this->assign('components', Config::Get('plugin.cdocs.components'));
+        $aComponents = array_map('ucfirst', Config::Get('plugin.cdocs.components'));
+        
+        $this->assign('components', $aComponents);
     }
 }
