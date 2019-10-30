@@ -58,8 +58,7 @@ class PluginCdocs_ActionCdocs extends Action{
     }
     
     public function EventShutdown() {
-        $aComponents = array_map('ucfirst', Config::Get('plugin.cdocs.components'));
         
-        $this->assign('components', $aComponents);
+        $this->assign('components', Config::Get('plugin.cdocs.components'));
     }
 }

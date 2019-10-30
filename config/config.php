@@ -9,6 +9,9 @@ $config['components'] = [
     'button',
     'icon',
     'badge',
-    'nav'
+    'nav',
+    'alert',
+    'card',
+    'breadcrumb'
 ];
 return $config;
