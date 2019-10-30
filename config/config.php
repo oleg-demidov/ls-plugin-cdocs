@@ -12,6 +12,7 @@ $config['components'] = [
     'nav',
     'alert',
     'card',
-    'breadcrumb'
+    'breadcrumb',
+    'carousel'
 ];
 return $config;
