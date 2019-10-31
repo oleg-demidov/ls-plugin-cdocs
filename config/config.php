@@ -13,6 +13,9 @@ $config['components'] = [
     'alert',
     'card',
     'breadcrumb',
-    'carousel'
+    'carousel',
+    'collapse',
+    'accordion',
+    'dropdown'
 ];
 return $config;
