@@ -16,6 +16,7 @@ $config['components'] = [
     'carousel',
     'collapse',
     'accordion',
-    'dropdown'
+    'dropdown',
+    'field'
 ];
 return $config;
