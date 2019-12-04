@@ -17,6 +17,7 @@ $config['components'] = [
     'collapse',
     'accordion',
     'dropdown',
-    'field'
+    'field',
+    'modal'
 ];
 return $config;
