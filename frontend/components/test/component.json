@@ -1,0 +1,7 @@
+{
+    "name": "test",
+    "templates": {
+        "test": "test.tpl",
+        "test2": "test2.tpl"
+    }
+}

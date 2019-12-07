@@ -4,6 +4,7 @@
  * Роутинг
  */
 $config['$root$']['router']['page']['cdocs'] = 'PluginCdocs_ActionCdocs';
+$config['$root$']['router']['page']['ctest'] = 'PluginCdocs_ActionCtest';
 
 $config['components'] = [
     'button',
