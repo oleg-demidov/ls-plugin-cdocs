@@ -1,7 +1,7 @@
 {**
  * Отзывы
  *}
-{extends 'layouts/layout.base.tpl'}
+{extends '../../layouts/layout.docs.tpl'}
 
 
 {block 'layout_page_title'}
@@ -9,6 +9,6 @@
 {/block}
                     
 {block 'layout_content'}
-    
+    {component "component.docs"}
     
 {/block}

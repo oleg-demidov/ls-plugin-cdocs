@@ -2,6 +2,8 @@
     "name": "test",
     "templates": {
         "test": "test.tpl",
-        "test2": "test2.tpl"
+        "test2": "test2.tpl",
+        "layout": "layout.tpl",
+        "layout2": "layout2.tpl"
     }
 }
