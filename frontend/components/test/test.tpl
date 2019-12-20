@@ -20,6 +20,10 @@
         param23 = '2-333'
         lay21   = '2-444'
     }*}
+    global vars = {$sHtmlDescription}<br>
+    global vars = {$aLang|print_r}<br>
+    global_test = {$global_test}<br>
+    global_assign_test = {$global_assign_test}<br>
     
     define_params = {$define_params|print_r}<br>
     params = {$params|print_r}<br>

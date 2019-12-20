@@ -40,7 +40,7 @@ class PluginCdocs_ActionCtest extends Action{
     
     public function EventIndex() 
     {
-        
-    }
+
+        }
     
 }

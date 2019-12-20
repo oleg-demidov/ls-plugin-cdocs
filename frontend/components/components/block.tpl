@@ -6,9 +6,9 @@
 {extends "component@component.layout"}
 
 {block 'options' append}
-    {component_define_params params=[ 
+    {*{component_define_params params=[ 
         'components'
-    ]}
+    ]}*}
 {/block}
 
 {block "content"}
